@@ -40,8 +40,8 @@ function box_name {
   echo "${box:gs/%/%%}"
 }
 
-PROMPT="╭─%{$terminfo[bold]$FG[002]%}%n%{$reset_color%}%{$FG[239]%}@%{$reset_color%}%{$terminfo[bold]$FG[040]%}$(box_name)%{$reset_color%}%{$FG[239]%}:%{$reset_color%}%{$terminfo[bold]$FG[018]%}%~%{$reset_color%}\$(git_prompt_info) %{\$FG[226]%}%D - %*%{$reset_color%}
-╰─\$(virtualenv_info)\$(prompt_char) "
+PROMPT="╭─%{$terminfo[bold]$FG[002]%}%n%{$reset_color%}%{$FG[239]%}@%{$reset_color%}%{$terminfo[bold]$FG[040]%}$(box_name)%{$reset_color%}%{$FG[239]%}:%{$reset_color%}%{$terminfo[bold]$FG[040]%}%~%{$reset_color%}\$(git_prompt_info) %{\$FG[226]%}%D - %*%{$reset_color%}
+╰─\$(virtualenv_info)\$(prompt_char)"
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[239]%}on%{$reset_color%} %{$fg[255]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
